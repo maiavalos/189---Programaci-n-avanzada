@@ -1,0 +1,38 @@
+import math
+
+def area_cuadrado(lado):
+    return lado * lado
+
+def perimetro_cuadrado(lado):
+    return lado * 4
+
+def area_rectangulo(base, altura):
+    return base * altura
+
+def perimetro_rectangulo(base, altura):
+    return 2 * (base + altura)
+
+def area_circunferencia(radio):
+    return math.pi * radio ** 2
+
+def perimetro_circunferencia(radio):
+    return 2 * math.pi * radio
+
+
+lado_cuadrado = 4
+base_rectangulo = 7
+altura_rectangulo = 5
+radio_circunferencia = 4
+
+
+print("Cuadrado:")
+print("Área:", area_cuadrado(lado_cuadrado))
+print("Perímetro:", perimetro_cuadrado(lado_cuadrado))
+
+print("Rectángulo:")
+print("Área:", area_rectangulo(base_rectangulo, altura_rectangulo))
+print("Perímetro:", perimetro_rectangulo(base_rectangulo, altura_rectangulo))
+
+print("Circunferencia:")
+print("Área:", area_circunferencia(radio_circunferencia))
+print("Perímetro:", perimetro_circunferencia(radio_circunferencia))
